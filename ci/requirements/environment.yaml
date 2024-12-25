@@ -4,6 +4,9 @@ channels:
 dependencies:
   - python=3.12
   - ipython
+  - black
   - pre-commit
   - pytest
   - pytest-reportlog
+  - earthaccess
+  - keyring

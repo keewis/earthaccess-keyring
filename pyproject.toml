@@ -2,7 +2,10 @@
 name = "earthaccess-keyring"
 requires-python = ">= 3.12"
 license = { text = "MIT" }
-dependencies = []
+dependencies = [
+  "earthaccess",
+  "keyring",
+]
 dynamic = ["version"]
 
 [build-system]
