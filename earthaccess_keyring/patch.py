@@ -10,7 +10,7 @@ def monkeypatch(func):
 
 @monkeypatch
 def _keyring(self) -> bool:
-    credential = keyring.get_credential("earthaccess")
+    credential = keyring.get_credential("earthaccess", None)
     if credential is None:
         logger.debug("failed to fetch earthaccess creds from the keyring")
 
